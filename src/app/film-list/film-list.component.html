@@ -1,0 +1,22 @@
+<div class="carousel-wrapper" *ngIf="filmSearched.length <= 0; else searchTemplate">
+    <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="true" [interval]="false"
+        [indicatorsByChunk]="true">
+        <slide *ngFor="let film of films.results">
+            <div class="card-wrapper">
+                <app-film-card [film]="film"></app-film-card>
+            </div>
+        </slide>
+    </carousel>
+</div>
+<ng-template #searchTemplate>
+    <div class="carousel-wrapper">
+        <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="true" [interval]="false"
+            [indicatorsByChunk]="true">
+            <slide *ngFor="let film of filmSearched.results">
+                <div class="card-wrapper">
+                    <app-film-card [film]="film"></app-film-card>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</ng-template>

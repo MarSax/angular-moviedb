@@ -1,0 +1,26 @@
+<mat-card class="preview">
+    <div class="card-header">
+        <mat-card-header>
+            <div mat-card-avatar class="card-avatar-img">
+                <img mat-card-image src='{{base_path+film.poster_path}}' alt="placeholder">
+            </div>
+            <mat-card-title>{{film.name}}</mat-card-title>
+            <mat-card-subtitle>{{film.popularity}}</mat-card-subtitle>
+        </mat-card-header>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="poster-wrapper">
+        <img mat-card-image src='{{base_path+film.poster_path}}' alt="placeholder">
+    </div>
+    <div class="overview">
+        <mat-card-content>
+            <p>{{film.overview.substring(0, 90)+" ..."}}</p>
+        </mat-card-content>
+    </div>
+    <mat-divider></mat-divider>
+    <mat-card-actions class="ml-1 mb-1">
+        <button mat-raised-button color="primary">
+            <a [routerLink]="['/film', film.id]"><div class="button-text">View More</div></a>
+        </button>
+    </mat-card-actions>
+</mat-card>

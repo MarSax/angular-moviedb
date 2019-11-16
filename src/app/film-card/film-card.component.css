@@ -1,0 +1,48 @@
+    .preview {
+        width: 80%;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.45);
+        margin: 0 auto;
+    }
+    
+    .preview:hover {
+        width: 85%;
+    }
+    
+    .card-header {
+        margin: 5px;
+        background-color: transparent;
+        border: 0;
+    }
+    
+    .preview:hover {
+        bottom: 3px;
+    }
+    
+    .card-avatar-img {
+        height: 50px;
+        width: 50x;
+        padding: 10px;
+        border-radius: 0; 
+    }
+    
+    .poster-wrapper {
+        text-align: center;
+        padding: 10px;
+        margin-top: 25px;
+    }
+    
+    .poster-wrapper img {
+        max-width: 70%;
+        height: auto;
+    }
+    
+    .button-text {
+        color: white;
+    }
+    
+    .mat-card-title{
+        font-size: 15px;
+        color:black;
+    }

@@ -1,0 +1,11 @@
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2%;
+    object-fit: contain
+}
+
+.carousel-wrapper {
+    margin: 2% 0;
+}

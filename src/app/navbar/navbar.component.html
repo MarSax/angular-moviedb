@@ -1,0 +1,12 @@
+<mat-toolbar class="navbar" color="primary">
+    <mat-toolbar-row>
+        <a id="title" routerLink="">Angular Movies</a>
+        <span class="spacer"></span>
+        <a mat-button routerLink="register">Register</a>
+        <a mat-button routerLink="login">Login</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search" #query>
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit" (click)="searchMovie(query.value)">Search</button>
+        </form>
+    </mat-toolbar-row>
+</mat-toolbar>
